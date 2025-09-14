@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ profile.name }} | Links</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <img src="{{ profile.avatar }}" alt="Avatar" class="avatar">
+        <h1>{{ profile.name }}</h1>
+        <p class="bio">{{ profile.bio }}</p>
+
+        <div class="links">
+            {% for link in profile.links %}
+                <a href="{{ link.url }}" target="_blank" class="button">{{ link.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

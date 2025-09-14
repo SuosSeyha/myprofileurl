@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1a73e8, #4285f4, #0f9d58);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.avatar {
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+h1 {
+    margin: 15px 0 5px;
+    font-size: 2rem;
+}
+
+.bio {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.button {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 20px;
+    width: 220px;
+    text-decoration: none;
+    color: white;
+    background: #222;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background: #555;
+}
